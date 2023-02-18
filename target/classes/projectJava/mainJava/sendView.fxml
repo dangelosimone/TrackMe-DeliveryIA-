@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainContainer" fx:id="node" minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="950.0" stylesheets="@../css/choiseViewStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJava.mainJava.view.controller.SendController">
+   <Button defaultButton="true" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#loadBack" prefHeight="49.0" prefWidth="43.0" style="-fx-background-radius: 30;" styleClass="backButton" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="893.0">
+      <graphic>
+         <ImageView fitHeight="40.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+            <image>
+               <Image url="@../images/backButton.png" />
+            </image>
+         </ImageView>
+      </graphic>
+   </Button>
+   <VBox alignment="CENTER" layoutX="352.0" layoutY="285.0" AnchorPane.leftAnchor="352.0" AnchorPane.topAnchor="285.0">
+      <children>
+         <HBox>
+            <children>
+               <Label text="Sender:" textFill="#fcfcfc">
+                  <font>
+                     <Font name="Segoe UI Semilight" size="20.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets right="30.0" />
+                  </HBox.margin>
+               </Label>
+               <ChoiceBox fx:id="senderChooser" prefHeight="34.0" prefWidth="166.0" />
+            </children>
+            <VBox.margin>
+               <Insets bottom="15.0" />
+            </VBox.margin>
+         </HBox>
+         <HBox>
+            <children>
+               <Label text="Receiver:" textFill="WHITE">
+                  <font>
+                     <Font name="Segoe UI Semilight" size="20.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets bottom="15.0" right="15.0" />
+                  </HBox.margin>
+               </Label>
+               <ChoiceBox fx:id="receiverChooser" prefHeight="34.0" prefWidth="170.0">
+                  <HBox.margin>
+                     <Insets bottom="15.0" />
+                  </HBox.margin>
+               </ChoiceBox>
+            </children>
+         </HBox>
+         <HBox prefHeight="30.0" prefWidth="131.0">
+            <children>
+               <Label alignment="CENTER" prefHeight="30.0" prefWidth="100.0" text="Peso:" textFill="WHITE">
+                  <font>
+                     <Font name="Segoe UI Semilight" size="20.0" />
+                  </font>
+               </Label>
+               <TextField fx:id="weightField" prefHeight="30.0" prefWidth="59.0">
+                  <HBox.margin>
+                     <Insets right="15.0" />
+                  </HBox.margin>
+               </TextField>
+               <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="77.0" text="kg" textFill="WHITE">
+                  <font>
+                     <Font name="Segoe UI Semilight" size="20.0" />
+                  </font>
+               </Label>
+            </children>
+         </HBox>
+      </children>
+   </VBox>
+   <VBox alignment="CENTER" layoutX="378.0" layoutY="477.0" AnchorPane.bottomAnchor="140.0" AnchorPane.leftAnchor="378.0" AnchorPane.rightAnchor="375.0" AnchorPane.topAnchor="477.0">
+      <children>
+         <Button mnemonicParsing="false" onAction="#send" prefHeight="83.0" prefWidth="197.0" styleClass="choiseViewButton" text="Spedisci collo">
+            <font>
+               <Font name="Segoe UI Semilight" size="18.0" />
+            </font>
+            <VBox.margin>
+               <Insets bottom="15.0" />
+            </VBox.margin>
+         </Button>
+      </children>
+   </VBox>
+   <Label fx:id="errorLabel" alignment="CENTER" layoutX="223.0" layoutY="160.0" prefHeight="17.0" prefWidth="506.0" textFill="#e02e0d">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <Label id="contentLabel" layoutX="272.0" layoutY="211.0" text="Send your package" />
+   <ImageView id="logo" fitHeight="116.0" fitWidth="455.0" layoutX="247.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/logo.png" />
+      </image>
+   </ImageView>
+</AnchorPane>

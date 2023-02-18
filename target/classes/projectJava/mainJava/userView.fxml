@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="mainContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="950.0" stylesheets="@../css/choiseViewStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJava.mainJava.view.controller.HistoryController">
+    <children>
+        <TableView fx:id="tableView" layoutX="139.0" layoutY="229.0" prefHeight="344.0" prefWidth="711.0">
+            <columns>
+                <TableColumn fx:id="trackingCode" prefWidth="137.0" text="Tracking Code" />
+                <TableColumn fx:id="vehicle" minWidth="0.0" prefWidth="225.0" text="Veicolo" />
+                <TableColumn fx:id="weight" prefWidth="64.0" text="Peso" />
+                <TableColumn fx:id="status" prefWidth="343.0" text="Sede" />
+            </columns>
+        </TableView>
+      <Label id="contentLabel" layoutX="353.0" layoutY="156.0" text="History order" />
+      <ImageView id="logo" fitHeight="116.0" fitWidth="455.0" layoutX="247.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+        <Button defaultButton="true" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#loadBack" prefHeight="49.0" prefWidth="44.0" styleClass="backButton" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="892.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../images/backButton.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+    </children>
+</AnchorPane>

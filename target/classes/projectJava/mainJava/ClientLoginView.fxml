@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="950.0" stylesheets="@../css/choiseViewStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJava.mainJava.view.controller.ClientLoginController">
+   <children>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="170.0" layoutY="178.0" prefHeight="18.0" prefWidth="233.0" textFill="RED" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="178.0" />
+      <VBox alignment="CENTER" layoutX="263.0" layoutY="254.0" AnchorPane.leftAnchor="263.0" AnchorPane.rightAnchor="263.0" AnchorPane.topAnchor="254.0">
+         <children>
+            <Label id="contentLabel" text="Sign in" />
+            <TextField fx:id="emailField" prefHeight="40.0" prefWidth="424.0" promptText="Email">
+               <font>
+                  <Font name="Liberation Sans" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="passwordField" prefHeight="40.0" prefWidth="424.0" promptText="Password">
+               <font>
+                  <Font name="Liberation Sans" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </PasswordField>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="321.0" layoutY="484.0" prefHeight="76.0" prefWidth="307.0" AnchorPane.bottomAnchor="140.0" AnchorPane.leftAnchor="321.0" AnchorPane.rightAnchor="322.0" AnchorPane.topAnchor="484.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onSubmitLogin" prefHeight="76.0" prefWidth="180.0" styleClass="choiseViewButton" text="Confirm">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#loadBack" prefHeight="43.0" prefWidth="132.0" style="-fx-background-radius: 30;" styleClass="backButton" text="Back" />
+         </children>
+      </HBox>
+      <ImageView id="logo" fitHeight="116.0" fitWidth="455.0" layoutX="247.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
