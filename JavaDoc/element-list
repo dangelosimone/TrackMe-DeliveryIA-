@@ -1,0 +1,9 @@
+module:unipa.prog
+projectJava.mainJava
+projectJava.mainJava.control.genetics
+projectJava.mainJava.control.service
+projectJava.mainJava.control.service.util
+projectJava.mainJava.sample.entity
+projectJava.mainJava.sample.entity.util
+projectJava.mainJava.sample.table
+projectJava.mainJava.view.controller
