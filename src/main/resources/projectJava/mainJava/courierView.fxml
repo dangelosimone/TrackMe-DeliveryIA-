@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="950.0" stylesheets="@../css/choiseViewStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJava.mainJava.view.controller.CourierController">
+   <children>
+      <VBox alignment="CENTER" layoutX="144.0" layoutY="197.0" styleClass="myPane" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="197.0">
+         <children>
+            <Label prefHeight="46.0" prefWidth="233.0" text="Tracking unit code" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semilight Italic" size="30.0" />
+               </font>
+            </Label>
+            <TextField id="trackingArea" fx:id="textField" alignment="CENTER" prefHeight="35.0" prefWidth="582.0">
+               <font>
+                  <Font name="Liberation Sans" size="13.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="60.0" layoutY="387.0" styleClass="myPane" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="387.0">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label text="Sorting center:" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="senderChooser" prefHeight="35.0" prefWidth="365.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#updateStatus" styleClass="courierViewButton" text="Update Center" textAlignment="CENTER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="15.0" top="25.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="delivered" alignment="CENTER" mnemonicParsing="false" onAction="#delivered" prefHeight="35.0" prefWidth="122.0" styleClass="courierViewButton" text="Notify Delivery" textAlignment="CENTER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" top="25.0" />
+                     </HBox.margin>
+                     <tooltip>
+                        <Tooltip text="Notify delivery of the package" />
+                     </tooltip>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button defaultButton="true" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#loadBack" prefHeight="46.0" prefWidth="46.0" styleClass="backButton" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="890.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../images/backButton.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="259.0" layoutY="120.0" prefHeight="17.0" prefWidth="431.0" textFill="#08bf3c" />
+      <ImageView id="logo" fitHeight="116.0" fitWidth="455.0" layoutX="248.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="mainContainer" focusTraversable="true" prefHeight="700.0" prefWidth="950.0" stylesheets="@../css/choiseViewStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectJava.mainJava.view.controller.ClientController">
+   <children>
+      <VBox layoutX="160.0" layoutY="260.0" prefHeight="263.0" prefWidth="630.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="260.0">
+         <children>
+            <HBox>
+               <children>
+                  <TextField fx:id="nameField" prefHeight="40.0" prefWidth="346.0" promptText="Name">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="surnameField" prefHeight="40.0" prefWidth="334.0" promptText="Surname" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </HBox>
+            <TextField fx:id="emailField" prefHeight="40.0" promptText="E-mail">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="phoneField" prefHeight="40.0" prefWidth="305.0" promptText="Telephone">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox>
+               <children>
+                  <TextField fx:id="addressField" prefHeight="40.0" prefWidth="495.0" promptText="Address">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="CAPField" prefHeight="40.0" prefWidth="280.0" promptText="Postal code" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <TextField fx:id="townField" prefHeight="40.0" prefWidth="314.0" promptText="City">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="countryField" prefHeight="40.0" prefWidth="300.0" promptText="Country" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="375.0" layoutY="556.0" AnchorPane.rightAnchor="375.0" AnchorPane.topAnchor="556.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addAddress" prefHeight="66.0" prefWidth="158.0" styleClass="choiseViewButton" text="Add">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView id="logo" fitHeight="116.0" fitWidth="455.0" layoutX="247.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+      <Label id="contentLabel" layoutX="335.0" layoutY="191.0" stylesheets="@../css/choiseViewStyle.css" text="New Address" />
+      <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="294.0" layoutY="179.0" prefHeight="23.0" prefWidth="365.0" textFill="#21d827" />
+      <Button defaultButton="true" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#loadBack" prefHeight="49.0" prefWidth="57.0" styleClass="backButton" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="904.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../images/backButton.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

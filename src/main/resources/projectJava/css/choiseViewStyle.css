@@ -1,0 +1,75 @@
+/** LOGO height: 116 width: 455 **/
+
+
+#mainContainer{
+    -fx-background-color: #2A2A2A;
+}
+
+.choiseViewButton{
+    -fx-font-family: "Segoe UI semilight";
+    -fx-text-fill: white;
+    -fx-background-color: #ED3559;
+    -fx-padding: 15px;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 50px;
+    -fx-font-size: 24px;
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 20 20 20 20;
+}
+
+.choiseViewButton:hover{
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(gaussian, #fff, 20.48, 0.0, 1.0, 0.0);
+}
+
+.backButton:hover{
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(gaussian, #fff, 20.48, 0.0, 1.0, 0.0);
+}
+.backButton{
+    -fx-background-color: transparent;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 100%;
+    -fx-cursor: hand;
+}
+
+.courierViewButton{
+    -fx-font-family: "Segoe UI semilight";
+    -fx-text-fill: white;
+    -fx-background-color: #ED3559;
+    -fx-pref-width: 170px;
+    -fx-pref-height: 15px;
+    -fx-font-size: 20px;
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 20 20 20 20;
+}
+
+#contentLabel{
+    -fx-font-size: 50px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-style: italic;
+    -fx-text-fill: white;
+}
+
+TextField,ChoiceBox,PasswordField {
+    -fx-background-radius: 20px;
+}
+
+.myPane{
+    -fx-background-radius: 30px;
+    -fx-background-color: #5C4040;
+    -fx-padding: 35px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 40.48, 0.0, 1.0, 0.0);
+}
+
+#delivered{
+    -fx-background-color: #2BF524;
+}
+
+.checkClient{
+    -fx-text-fill: white;
+    -fx-mark-color: #ED3559;
+    -fx-font-family: "Segoe UI semilight";
+    -fx-font-size: 16px;
+}
