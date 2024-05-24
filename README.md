@@ -1,13 +1,40 @@
 # TrackMe-DeliveryIA
 
-I developed an application for a university project aimed at managing the loading and tracking of goods within the logistics sector. This application caters to a hypothetical transportation company with multiple branches across Italy. Each vehicle within the company’s fleet is identified by a unique code, type, and container capacity, while individual packages are distinguished by a code, sender, recipient, and weight. The application’s main functionalities include efficiently managing the loading of packages into containers by selecting the most suitable vehicles based on capacity, utilizing a Genetic Algorithm for loading optimization, and providing real-time tracking of packages as they move through sorting centers. This tracking system allows recipients to easily monitor the status of their shipments using unique package codes. Overall, the application streamlines logistics operations, optimizing loading processes, and enhancing package tracking capabilities for improved efficiency and customer satisfaction.
+Welcome to TrackMe-DeliveryIA, an innovative application developed for a university project focused on enhancing logistics operations for a transportation company in Italy.
 
-During our project we using a ***Genetic Algorith***.
-Specifically is an evolutionary algorithm that mimics natural selection to find optimal solutions for complex problems by iteratively improving a population of candidate solutions through genetic operators like selection, crossover, and mutation.
+## Overview
 
+TrackMe-DeliveryIA is designed to manage the loading and tracking of goods efficiently. It utilizes a ***Genetic Algorithm*** for optimizing package loading and provides real-time tracking capabilities.
 
+## Key Features
++ **Vehicle Management**: Identifies each vehicle by a unique code, type, and container capacity.
++ **Package Management**: Each package is distinguished by a code, sender, recipient, and weight.
++ **Loading Optimization**: Uses a Genetic Algorithm to select the most suitable vehicles based on capacity.
++ **Real-Time Tracking**: Allows recipients to monitor the status of their shipments using unique package codes.
 
-The program will be responsible for creating the files "sede.csv" and "vehicles.csv" populated through a BashScript, launched as a process within the JAVA application upon its first execution, inserting them into the previously mentioned 'prog3' directory. The first execution of the program will be checked by creating a hidden file (".wanted") in the home directory of the PC. In subsequent executions, the program will check for the existence of the file and will ensure not to create the CSV files again.
+## Technical Details
++ **Initial Setup**: Automatically creates sede.csv and vehicles.csv files through a Bash script on first execution.
++ **Execution Check**: Uses a hidden file .wanted to ensure CSV files are not recreated on subsequent runs.
++ **Platform**: This approach is compatible only with UNIX systems.
 
+## Getting Started
+1. **Clone the repository**:
+```sh
+git clone https://github.com/dangelosimone/TrackMe-DeliveryIA-.git
+```
+1. **Clone the repository**:
+```sh
+cd TrackMe-DeliveryIA-
+```
+1. **Clone the repository**:
+```sh
+./start.sh
+```
+
+## Contributing
+Contributions are welcome! Please fork the repository and create a pull request.
+
+##License
+This project is licensed under the MIT License.
 
 ⚠️ This approach only works on UNIX systems.
